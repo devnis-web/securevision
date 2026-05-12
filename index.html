@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SecureVision - Jasa Pasang CCTV Profesional & Instalasi Keamanan</title>
+    <meta name="title" content="SecureVision - Jasa Pasang CCTV Profesional & Instalasi Keamanan">
+    <meta name="description" content="Jasa pasang CCTV murah & bergaransi untuk rumah, kantor, dan gudang. Melayani instalasi, maintenance, dan service CCTV di Jakarta, Bogor, Depok, Tangerang, Bekasi.">
+    <meta name="keywords" content="jasa pasang cctv, instalasi cctv, service cctv, maintenance cctv, cctv rumah, cctv kantor, pasang cctv terdekat">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-morphism { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .hero-gradient { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=1600') center/cover; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SecureVision CCTV",
+      "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9",
+      "description": "Jasa pasang CCTV profesional dan sistem keamanan terintegrasi.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Utama No. 123",
+        "addressLocality": "Jakarta",
+        "addressRegion": "DKI Jakarta",
+        "postalCode": "10110",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.2088,
+        "longitude": 106.8456
+      },
+      "url": "https://yourwebsite.com",
+      "telephone": "+6281234567890",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-gray-50 text-slate-900 overflow-x-hidden">
+
+    <div class="bg-emerald-600 text-white py-2 px-4 text-center text-sm font-medium">
+        <span class="inline-block animate-pulse mr-2">●</span> Promo Bulan Ini: <span class="font-bold underline italic">Survey & Konsultasi Gratis</span> untuk Area Jabodetabek!
+    </div>
+
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-4 md:px-6">
+            <nav class="glass-morphism rounded-2xl shadow-lg border border-white/20 flex items-center justify-between px-6 py-3">
+                <a href="#" class="flex items-center gap-2">
+                    <i data-lucide="shield-check" class="text-emerald-600 w-8 h-8"></i>
+                    <span class="text-2xl font-bold tracking-tighter text-slate-900">SECURE<span class="text-emerald-600">VISION</span></span>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                    <a href="#home" class="hover:text-emerald-600 transition">Home</a>
+                    <a href="#layanan" class="hover:text-emerald-600 transition">Layanan</a>
+                    <a href="#paket" class="hover:text-emerald-600 transition">Paket Harga</a>
+                    <a href="#area" class="hover:text-emerald-600 transition">Area</a>
+                    <a href="#faq" class="hover:text-emerald-600 transition">FAQ</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="tel:+6281234567890" class="hidden md:flex items-center gap-2 text-sm font-bold text-slate-800 bg-slate-100 px-4 py-2 rounded-xl hover:bg-slate-200 transition">
+                        <i data-lucide="phone" class="w-4 h-4"></i> 0812-3456-7890
+                    </a>
+                    <a href="#kontak" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-xl font-bold text-sm transition shadow-lg shadow-emerald-200">
+                        Konsultasi Gratis
+                    </a>
+                    <button id="menu-btn" class="lg:hidden text-slate-800 focus:outline-none">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-24 left-0 w-full px-4 lg:hidden">
+            <div class="bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 flex flex-col gap-4 text-center font-semibold">
+                <a href="#home" class="py-2 border-b border-gray-50">Home</a>
+                <a href="#layanan" class="py-2 border-b border-gray-50">Layanan</a>
+                <a href="#paket" class="py-2 border-b border-gray-50">Paket Harga</a>
+                <a href="#area" class="py-2 border-b border-gray-50">Area Layanan</a>
+                <a href="#kontak" class="py-2 text-emerald-600 font-bold">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-3xl text-white">
+                <div class="inline-flex items-center gap-2 bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 px-4 py-2 rounded-full text-sm font-bold mb-6">
+                    <i data-lucide="shield-alert" class="w-4 h-4"></i> Siaga 24 Jam - Emergency Service
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Jasa Pasang CCTV Profesional untuk <span class="text-emerald-400">Rumah & Bisnis</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
+                    Solusi keamanan terpercaya dengan instalasi cepat, teknisi ahli berpengalaman, harga transparan, dan garansi resmi hingga 2 tahun.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/6281234567890" class="flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-2xl font-bold text-lg transition transform hover:-translate-y-1">
+                        <i data-lucide="message-circle" class="w-6 h-6"></i> WhatsApp Sekarang
+                    </a>
+                    <a href="#paket" class="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur text-white border border-white/30 px-8 py-4 rounded-2xl font-bold text-lg transition">
+                        Lihat Paket Harga
+                    </a>
+                </div>
+                
+                <div class="mt-12 flex flex-wrap gap-6 items-center opacity-80">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="text-emerald-500 w-5 h-5"></i>
+                        <span class="text-sm font-medium">Garansi 2 Tahun</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="text-emerald-500 w-5 h-5"></i>
+                        <span class="text-sm font-medium">Teknisi Sertifikasi</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="text-emerald-500 w-5 h-5"></i>
+                        <span class="text-sm font-medium">Free Maintenance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-emerald-600 font-bold tracking-widest uppercase text-sm mb-3">Layanan Kami</h2>
+                <p class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Solusi Keamanan Terintegrasi</p>
+                <p class="text-slate-500">Kami melayani berbagai kebutuhan sistem keamanan dengan standar industri tinggi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="reveal p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-emerald-500 hover:bg-white hover:shadow-2xl hover:shadow-emerald-100 transition duration-500">
+                    <div class="bg-emerald-100 text-emerald-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="camera" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Instalasi CCTV Baru</h3>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">Pemasangan set unit CCTV (IP Camera/Analog) untuk indoor maupun outdoor dengan tarikan kabel rapi.</p>
+                    <a href="#" class="text-emerald-600 font-bold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">Selengkapnya <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <div class="reveal p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-emerald-500 hover:bg-white hover:shadow-2xl hover:shadow-emerald-100 transition duration-500">
+                    <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="settings" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Maintenance & Service</h3>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">Perbaikan kamera mati, gambar blur, ganti DVR/Hardisk, hingga pembersihan rutin lensa kamera.</p>
+                    <a href="#" class="text-emerald-600 font-bold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">Selengkapnya <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <div class="reveal p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-emerald-500 hover:bg-white hover:shadow-2xl hover:shadow-emerald-100 transition duration-500">
+                    <div class="bg-indigo-100 text-indigo-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="smartphone" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Monitoring via HP</h3>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">Setting online agar Anda bisa memantau kondisi rumah/kantor kapanpun dan dimanapun via smartphone.</p>
+                    <a href="#" class="text-emerald-600 font-bold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">Selengkapnya <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-900 text-white overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 relative">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800" alt="CCTV Professional" class="rounded-3xl shadow-2xl">                    <div class="absolute -bottom-6 -right-6 bg-emerald-600 p-8 rounded-2xl hidden md:block">
+                        <p class="text-4xl font-black italic">10+ Thn</p>
+                        <p class="text-sm font-medium">Pengalaman Industri</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Kenapa Memilih Layanan <span class="text-emerald-400">SecureVision?</span></h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="shrink-0 bg-white/10 p-3 rounded-xl"><i data-lucide="badge-check" class="text-emerald-400"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Teknisi Ahli & Jujur</h4>
+                                <p class="text-slate-400">Dikerjakan oleh tim yang berpengalaman di berbagai medan instalasi.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="shrink-0 bg-white/10 p-3 rounded-xl"><i data-lucide="credit-card" class="text-emerald-400"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Harga Transparan</h4>
+                                <p class="text-slate-400">Tanpa biaya tersembunyi. Semua perincian material jelas di awal.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="shrink-0 bg-white/10 p-3 rounded-xl"><i data-lucide="zap" class="text-emerald-400"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Support Cepat 24/7</h4>
+                                <p class="text-slate-400">Ada kendala? Tim support kami siap membantu kapan saja.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paket" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">Paket Pilihan Terbaik</h2>
+                <p class="text-slate-500">Pilih paket sesuai kebutuhan keamanan properti Anda.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="reveal bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition duration-500 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">Paket Lite (Rumah)</h3>
+                    <div class="text-emerald-600 font-black text-3xl mb-6">Rp 2.xxx.xxx</div>
+                    <ul class="space-y-4 mb-8 text-slate-600 flex-grow">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> 2 Kamera Indoor/Outdoor 2MP</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> DVR 4 Channel Full HD</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Hardisk 500GB (Khusus CCTV)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Free Kabel 20m & Instalasi</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Halo, saya tertarik paket CCTV 2 Kamera" class="block text-center border-2 border-emerald-600 text-emerald-600 py-3 rounded-xl font-bold hover:bg-emerald-600 hover:text-white transition">Pilih Paket</a>
+                </div>
+
+                <div class="reveal bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl scale-105 relative z-10 flex flex-col text-white">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-emerald-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Paling Populer</div>
+                    <h3 class="text-xl font-bold mb-2">Paket Business (Toko)</h3>
+                    <div class="text-emerald-400 font-black text-3xl mb-6">Rp 4.xxx.xxx</div>
+                    <ul class="space-y-4 mb-8 text-slate-300 flex-grow">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-400"></i> 4 Kamera Full HD ColorNight</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-400"></i> DVR 8 Channel Cloud</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-400"></i> Hardisk 1TB High-End</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-400"></i> Setting Online HP (Unlimited)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-400"></i> Garansi Unit 2 Tahun</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Halo, saya tertarik paket CCTV 4 Kamera" class="block text-center bg-emerald-600 text-white py-3 rounded-xl font-bold hover:bg-emerald-700 transition shadow-lg shadow-emerald-500/20">Pilih Paket</a>
+                </div>
+
+                <div class="reveal bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition duration-500 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">Paket Custom (Enterprise)</h3>
+                    <div class="text-emerald-600 font-black text-3xl mb-6">Hubungi Kami</div>
+                    <ul class="space-y-4 mb-8 text-slate-600 flex-grow">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Custom Jumlah Kamera (16+)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> IP Camera 4K & NVR System</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Fiber Optic Cabling</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Command Center Setup</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Halo, saya ingin konsultasi paket CCTV custom" class="block text-center border-2 border-emerald-600 text-emerald-600 py-3 rounded-xl font-bold hover:bg-emerald-600 hover:text-white transition">Konsultasi Gratis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="area" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-8">Area Layanan Kami</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-white px-6 py-2 rounded-full shadow-sm font-semibold border border-gray-200">Jakarta</span>
+                <span class="bg-white px-6 py-2 rounded-full shadow-sm font-semibold border border-gray-200">Bogor</span>
+                <span class="bg-white px-6 py-2 rounded-full shadow-sm font-semibold border border-gray-200">Depok</span>
+                <span class="bg-white px-6 py-2 rounded-full shadow-sm font-semibold border border-gray-200">Tangerang</span>
+                <span class="bg-white px-6 py-2 rounded-full shadow-sm font-semibold border border-gray-200">Bekasi</span>
+                <span class="bg-white px-6 py-2 rounded-full shadow-sm font-semibold border border-gray-200">Cikarang</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold italic">Pertanyaan Umum (FAQ)</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left font-bold flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition">
+                        Berapa lama proses pemasangan CCTV?
+                        <i data-lucide="chevron-down" class="transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-slate-600 bg-white border-t border-slate-100">
+                        Untuk paket standar 4 kamera, biasanya memakan waktu 4-6 jam tergantung tingkat kesulitan tarikan kabel di lokasi Anda.
+                    </div>
+                </div>
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left font-bold flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition">
+                        Apakah bisa dipantau dari luar kota via smartphone?
+                        <i data-lucide="chevron-down" class="transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-slate-600 bg-white border-t border-slate-100">
+                        Ya, sangat bisa. Tim kami akan membantu setting online di smartphone Anda sehingga pemantauan bisa dilakukan kapan saja melalui jaringan internet.
+                    </div>
+                </div>
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left font-bold flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition">
+                        Bagaimana sistem klaim garansi?
+                        <i data-lucide="chevron-down" class="transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-slate-600 bg-white border-t border-slate-100">
+                        Cukup hubungi nomor customer service kami. Teknisi kami akan datang melakukan pengecekan di lokasi (on-site) jika ada kendala pada unit atau hasil instalasi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl font-black mb-6 italic">Hubungi Kami Sekarang</h2>
+                    <p class="text-slate-600 mb-8 leading-relaxed">Jangan tunda keamanan aset berharga Anda. Konsultasikan kebutuhan sistem keamanan Anda dengan tim ahli kami secara gratis.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-emerald-600 text-white p-3 rounded-xl"><i data-lucide="mail"></i></div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Email Kami</p>
+                                <p class="text-lg font-bold">info@securevision.id</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-emerald-600 text-white p-3 rounded-xl"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Lokasi Kantor</p>
+                                <p class="text-lg font-bold">Kawasan Bisnis Sudirman, Jakarta Pusat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+                    <form action="#" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold mb-1 ml-1">Nama Lengkap</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-1 ml-1">Nomor WhatsApp</label>
+                                <input type="tel" placeholder="0812..." class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-1 ml-1">Tipe Properti</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                                <option>Rumah Tinggal</option>
+                                <option>Toko/Ruko</option>
+                                <option>Kantor</option>
+                                <option>Gudang/Pabrik</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-1 ml-1">Pesan / Kebutuhan</label>
+                            <textarea rows="4" placeholder="Jelaskan kebutuhan Anda..." class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
+                        </div>
+                        <button class="w-full bg-slate-900 text-white py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition shadow-lg">Kirim Permintaan Konsultasi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-16 border-t border-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i data-lucide="shield-check" class="text-emerald-500 w-8 h-8"></i>
+                        <span class="text-2xl font-bold tracking-tighter">SECURE<span class="text-emerald-500">VISION</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">Penyedia jasa instalasi sistem keamanan terintegrasi terpercaya dengan ribuan klien di Jabodetabek.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Tautan Cepat</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a href="#" class="hover:text-emerald-400 transition">Beranda</a></li>
+                        <li><a href="#layanan" class="hover:text-emerald-400 transition">Layanan Kami</a></li>
+                        <li><a href="#paket" class="hover:text-emerald-400 transition">Paket Harga</a></li>
+                        <li><a href="#area" class="hover:text-emerald-400 transition">Area Layanan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Layanan</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li>Pasang CCTV Analog</li>
+                        <li>Pasang IP Camera</li>
+                        <li>Service & Maintenance</li>
+                        <li>Smart Home Security</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Jam Operasional</h4>
+                    <p class="text-slate-400 text-sm">Senin - Sabtu: 08.00 - 20.00</p>
+                    <p class="text-slate-400 text-sm">Minggu: Hanya Emergency Service</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+                <p>&copy; 2026 SecureVision CCTV. All Rights Reserved. Designed for Professional Security Services.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6281234567890" class="fixed bottom-6 right-6 z-[999] bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <button id="back-to-top" class="hidden fixed bottom-6 left-6 z-[999] bg-white text-slate-900 w-12 h-12 rounded-full flex items-center justify-center shadow-xl border border-gray-100 hover:bg-gray-100 transition">
+        <i data-lucide="chevron-up" class="w-6 h-6"></i>
+    </button>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Navbar Sticky Effect
+        const navbar = document.getElementById('navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2');
+                document.getElementById('back-to-top').classList.remove('hidden');
+            } else {
+                navbar.classList.remove('py-2');
+                document.getElementById('back-to-top').classList.add('hidden');
+            }
+            reveal();
+        };
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                // Toggle Content
+                content.classList.toggle('hidden');
+                
+                // Rotate Icon
+                icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+            });
+        });
+
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        // Smooth Scroll for back to top
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close mobile menu on link click
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
